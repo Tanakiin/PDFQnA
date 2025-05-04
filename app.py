@@ -1,13 +1,13 @@
 import streamlit as st
+st.set_page_config(page_title="PDF QnA", layout="centered")
+
 from utils import extract_text_from_pdf, chunk_text
 from embedder import embed_and_store
 from retriever_chain import get_qa_chain
-import streamlit as st
-st.set_page_config(page_title="PDF QnA", layout="centered")
-
 from streamlit_cookies_manager import EncryptedCookieManager
 import os
 import time
+
 
 cookie_password = st.secrets["COOKIE_PASSWORD"]
 cookies = EncryptedCookieManager(
