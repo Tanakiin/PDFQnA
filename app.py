@@ -2,8 +2,10 @@ import streamlit as st
 from utils import extract_text_from_pdf, chunk_text
 from embedder import embed_and_store
 from retriever_chain import get_qa_chain
-from streamlit_cookies_manager import EncryptedCookieManager
 import streamlit as st
+st.set_page_config(page_title="PDF QnA", layout="centered")
+
+from streamlit_cookies_manager import EncryptedCookieManager
 import os
 import time
 
@@ -26,7 +28,6 @@ if request_count >= MAX_REQUESTS:
 
 st.info(f"💬 Questions used: {request_count} / {MAX_REQUESTS}")
 
-st.set_page_config(page_title="PDF QnA", layout="centered")
 st.title("PDF QnA")
 
 uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
