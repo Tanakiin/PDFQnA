@@ -1,0 +1,6 @@
+# Ignore environment files
+.env
+
+# (Optional) Ignore Streamlit cache
+.streamlit/
+__pycache__/
