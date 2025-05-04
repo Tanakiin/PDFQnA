@@ -8,3 +8,4 @@ streamlit
 PyMuPDF
 tqdm
 python-dotenv
+streamlit-cookies-manager
