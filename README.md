@@ -2,7 +2,7 @@
 
 Ask My Docs is a lightweight AI-powered Q&A app that lets you upload a PDF and ask natural language questions about its contents. It uses semantic search and large language models to return context-aware answers based on your documents.
 
-/*🔴 [PDFQnA Live App](https://tanakiin-pdfqna-app-yjxxoi.streamlit.app/)*/
+<!--🔴 [PDFQnA Live App](https://tanakiin-pdfqna-app-yjxxoi.streamlit.app/)-->
 
 ---
 
